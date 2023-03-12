@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universitet Formu</title>
+</head>
+<style>
+    h2{
+        color: white;
+    }
+    div.form{
+        text-align: center;
+        border: 2px solid rgb(66, 91, 202);
+        border-radius: 2%;
+        width: 320px;
+        border-style: dashed;
+        position: relative;
+        left: 520px;
+        color:white;
+    }
+    body{
+        background-image: url('https://i.pinimg.com/originals/20/a6/ad/20a6ad88613e5f8c062d4b4fd5e5d47a.jpg');
+    }
+</style>
+<body>
+    <h2 style="text-align: center ;">Coders Academy Təqüd Proqramı</h2>
+    <div class="form">
+        <br>
+        <form method="POST">
+            <label for="ad">Adınız:
+                <input type="text" placeholder="Ad" required>
+            </label>
+            <br><br>
+            <label for="soyad">Soyadınız:
+                <input type="text" placeholder="Soyad" required>
+            </label>
+            <br><br>
+            <label for="uni">Universitet:
+                <input type="text" placeholder="Universitet" required>
+            </label>
+            <br><br>
+            <label for="ixtisas">İxtisas:
+                <input type="text" placeholder="İxtisasınız" required>
+            </label>
+            <br><br>
+            <label for="qebulili">Qəbul ili:
+                <input type="datetime-local" placeholder="Qəbul olduğunuz il" required>
+            </label>
+            <br><br>
+            <label for="qebulbali">Qəbul balı:
+                <input type="number" placeholder="Qəbul balı" required>
+            </label>
+            <br><br>
+            <label for="ortalama" required>ÜOMG:
+                <input type="number" placeholder="ÜOMG">
+            </label>
+            <br><br>
+            <label>Zəhmət olmasa qrupu seçin:
+            <select name="qrup" id="qrupnumber">
+                <option value="651.20">651.20</option>
+                <option value="653.20">653.20</option>
+                <option value="655.20">655.20</option>
+            </select>
+            </label>
+            <br><br>
+            <label class="check2">İştirak etmə istədiyiniz kursu seçin:
+            <br>
+            <input type="checkbox" name="kurs1" id="front" value="FrontEnd">
+            <label for="vehicle1"> FrontEnd-Developer</label><br>
+            <input type="checkbox" name="kurs1" id="backende"  value="BackEnd">
+            <label for="vehicle2"> BackEnd-Developer</label><br>
+            <input type="checkbox" name="kurs1" id="datascience" value="Data Science">
+            <label for="vehicle3"> Data Science</label>
+            </label>
+            <br><br>
+            <label for="id fayl">CV daxil edin: 
+                <input  id="id fayl" type="file">
+            </label>
+            <br><br>
+            <label for="gonder">
+                <input type="submit" value="Göndər">
+            </label>
+            <br><br>
+        </form>
+    </div>
+    
+</body>
+</html>
